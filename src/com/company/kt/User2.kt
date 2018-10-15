@@ -1,40 +1,62 @@
 package com.company.kt
 
 
-class User2 {
+class A {
 
     var Name: String? = null
 
     var Number: Int = 0
 
-    inner class InnerA {
-        internal var a: Int = 0
-        internal var s: String? = null
-        internal var ss: Short = 0
+    var str: String? = null
+
+    inner class InnerAa {
+        var a: Int = 0
+        var s: String? = null
+        var ss: Short = 0
     }
 
-    class InnerB {
-        internal var a: Int = 0
-        internal var s: String? = null
-        internal var ss: Short = 0
+    class InnerAb {
+        var a: Int = 0
+        var s: String? = null
+        var ss: Short = 0
     }
+
+    data class InnerAc(
+            var Name: String? = null,
+            var Number: Int = 0,
+            var str: String? = null
+    )
 }
 
-internal class Test {
+class B {
 
     var Name: String? = null
 
     var Number: Int = 0
 
-    inner class InnerC {
-        internal var a: Int = 0
-        internal var s: String? = null
-        internal var ss: Short = 0
+    var str: String? = null
+
+    inner class InnerBa {
+        var a: Int = 0
+        var s: String? = null
+        var ss: Short = 0
     }
 
-    class InnerB {
-        internal var a: Int = 0
-        internal var s: String? = null
-        internal var ss: Short = 0
+    class InnerBb {
+        var a: Int = 0
+        var s: String? = null
+        var ss: Short = 0
     }
+
+    data class InnerBc(
+            var Name: String? = null,
+            var Number: Int = 0,
+            var str: String? = null
+    )
 }
+
+data class C(
+        var Name: String? = null,
+        var Number: Int = 0,
+        var str: String? = null
+)
