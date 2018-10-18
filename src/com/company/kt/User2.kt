@@ -1,7 +1,9 @@
 package com.company.kt
 
 
-class A {
+class A(var PName: String? = null,
+        var PNumber: Int = 0,
+        var P_str: String? = null) {
 
     var Name: String? = null
 
@@ -9,13 +11,17 @@ class A {
 
     var str: String? = null
 
-    inner class InnerAa {
+    inner class InnerAa(var PName: String? = null,
+                        var PNumber: Int = 0,
+                        var P_str: String? = null) {
         var a: Int = 0
         var s: String? = null
         var ss: Short = 0
     }
 
-    class InnerAb {
+    class InnerAb(var PName: String? = null,
+                  var PNumber: Int = 0,
+                  var P_str: String? = null) {
         var a: Int = 0
         var s: String? = null
         var ss: Short = 0
@@ -28,7 +34,9 @@ class A {
     )
 }
 
-class B {
+class B(var PName: String? = null,
+        var PNumber: Int = 0,
+        var P_str: String? = null) {
 
     var Name: String? = null
 
@@ -36,13 +44,17 @@ class B {
 
     var str: String? = null
 
-    inner class InnerBa {
+    inner class InnerBa(var PName: String? = null,
+                        var PNumber: Int = 0,
+                        var P_str: String? = null) {
         var a: Int = 0
         var s: String? = null
         var ss: Short = 0
     }
 
-    class InnerBb {
+    class InnerBb(var PName: String? = null,
+                  var PNumber: Int = 0,
+                  var P_str: String? = null) {
         var a: Int = 0
         var s: String? = null
         var ss: Short = 0
